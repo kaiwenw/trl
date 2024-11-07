@@ -685,7 +685,7 @@ class DPOTrainer(Trainer):
                 "collate_fn": self.data_collator,
                 "num_workers": self.args.dataloader_num_workers,
                 "pin_memory": self.args.dataloader_pin_memory,
-                "shuffle": False,
+                "shuffle": True,
             }
 
             # prepare dataloader
